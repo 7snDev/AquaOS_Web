@@ -1,0 +1,100 @@
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  color: transparent;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.terminal {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: text;
+}
+
+.command {
+  width: 99%;
+  display: flex;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.prompt {
+  margin: 15px;
+  font-size: 16px;
+  width: 98%;
+  font-family: monospace;
+  user-select: none;
+  display: flex;
+  visibility: hidden;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#currentDirectory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.welcome {
+  visibility: hidden;
+  margin: 15px;
+  font-size: 16px;
+  width: 98%;
+  font-family: monospace;
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  height: 60%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+}
+.text {
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: 0px;
+  animation: typing 3.5s steps(100, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 101%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .terminal {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AquaOS - A Terminal Based Operating System With a GUI Apps">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="stylesheet" href="style.css" />
+    <title>AquaOS</title>
+  </head>
+  <body>
+    <div class="terminal">
+      <img src="icons/AquaOS.png" class="logo" alt="">
+      <span class="text"><span>AquaOS</span><br />Loading...<br /><div>Version 1.0.0</div></span>
+      <span class="welcome">Welcome to AquaOS 💧<br />Type 'help' for more info<br />Version 1.0.0</span>
+      <span class="prompt" id="prompt"><span id="currentDirectory">/></span> <input type="text" class="command"></span>
+    </div>
+    <div class="program">
+    </div>
+    <script src="apps/media.js"></script>
+    <script src="System/filemanager.js"></script>
+    <script src="System/run_commands.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

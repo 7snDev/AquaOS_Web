@@ -4,7 +4,7 @@ document.addEventListener("contextmenu", (event) => {
 
 document.addEventListener("keydown", async (event) => {
   if (event.key == "F12" || event.key == "F11" || event.key == "F5") {
-    // event.preventDefault();
+    event.preventDefault();
   }
 });
 
